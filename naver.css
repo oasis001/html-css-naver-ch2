@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box; /* css내 모든 태그에 적용 */
+}
 /*선택자(selector)*/
 
 .blind {
@@ -20,9 +23,12 @@ div#header-center{  /*div는 생략도 가능* ex #header-center {~~}*/
   height: 62px;
   display: inline-block;
   background: url(./sp_search.png) 0 5px no-repeat;
+  position: relative;
+  top: -2px;
+  left: 6px;
   /* background-image: url(./sp_search.png);
   background-position: 0 5px;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat; 배경이미지 반복여부 */
 }
 
 /*
@@ -40,7 +46,40 @@ header-center h1 {
 }
 
 #header-search fieldset{
-  width: 474px;
-  margin: 12px 10px 12px 10px; /*위-좌-아래-우*/
+  margin-left: 20px;
+  width: 582px;
+  height: 52px;
   display: inline-block;
+  border: 2px solid #19ce60; /* hex color */
+  box-sizing: border-box;
+  position: relative;
 }
+
+#header-search fieldset input{
+  border: none;
+  padding: 0;
+  outline: none;
+  vertical-align: top;
+  width: 444px;
+  height: 36px;
+}
+
+#header-search fieldset button{
+  width: 51px;
+  height: 51px;
+  border: none;
+  padding: 0;
+  background: #19ce60;
+  position: absolute;
+  right: 0;
+  top: 0;
+  }
+
+#search-image{
+  background-image: url(./sp_search.png);
+  background-position: -4px -59px;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+} 
